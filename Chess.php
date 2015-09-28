@@ -9,11 +9,6 @@ class Chess extends Game {
 	public function displayName(){
 		print "You are currently viewing: ". $this->game_name ."";
 	}
-
-	public function move($player_type){
-
-
-	}
 }
 
 

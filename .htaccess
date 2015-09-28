@@ -1,6 +1,8 @@
-  RewriteBase /html/php_oops
+  RewriteBase /
   RewriteEngine on
-  #RewriteCond %{REQUEST_FILENAME} !-f
-  #RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
   #RewriteCond %{REQUEST_URI} !=/favicon.ico
   RewriteRule ^ index.php [L]
+
+  ErrorDocument 404 /page_not_found.html
